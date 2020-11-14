@@ -22,7 +22,7 @@ export const SearchBar = () => {
       if (debouncedSearchTerm.length) {
         axios
           .get(
-            `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apikey}&q=${debouncedSearchTerm}`
+            `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apikey}&q=${debouncedSearchTerm}`
           )
           .then((response) => {
             setsearchResult(response.data);

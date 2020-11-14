@@ -14,7 +14,7 @@ export const City = ({ match }) => {
       RelativeHumidity: "",
       IndoorRelativeHumidity: "",
       WeatherText: "",
-      WeatherIcon: "",
+      WeatherIcon: "1",
     },
   ]);
   const [isLoading, setIsLoading] = useState(false);
@@ -27,7 +27,7 @@ export const City = ({ match }) => {
     setIsLoading(true);
     axios
       .get(
-        `http://dataservice.accuweather.com/currentconditions/v1/${city}?apikey=${apikey}&details=true`
+        `https://dataservice.accuweather.com/currentconditions/v1/${city}?apikey=${apikey}&details=true`
       )
       .then((response) => {
         setcityDetails(response.data);
@@ -149,3 +149,4 @@ export const City = ({ match }) => {
     </section>
   );
 };
+
