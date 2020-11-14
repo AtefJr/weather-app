@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+export const apikey = "RmQvUIQcXAfsIinKqn0yfXlB8YYuFI71";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
