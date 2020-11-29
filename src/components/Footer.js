@@ -10,7 +10,7 @@ export const Footer = () => {
         <small>
           Made with <span>❤</span> by{" "}
           <a
-            href="https://www.linkedin.com/in/atefjr/"
+            href="https://www.linkedin.com/in/matefkhalaf/"
             rel="noreferrer"
             target="_blank"
           >
